@@ -9,9 +9,9 @@ var apiKey = require('./../.env').apiKey;
 var getRepos = require('./../js/get_repos.js').getRepos;
 
 $(function() {
-  $('form#search-user').submit(function(event) {
+  $('form#search_user').submit(function(event) {
     event.preventDefault();
-    var user_name = 'jsween';
+    var user_name = $('#user_name').val();
     getRepos(apiKey, user_name);
   });/*end of when ready $ func*/
 });/*end of get repos*/
