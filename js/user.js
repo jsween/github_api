@@ -5,12 +5,3 @@ exports.User = function(user_data) {
   this.public_repos = user_data.public_repos;
   this.repos_url = user_data.html_url + '?tab=repositories';
 };
-
-// exports.Class.prototype.triggerAlarm = function(currentProperty, setProperty) {
-//   if (currentProperty === setProperty) {
-//     return true;
-//   }
-//   else {
-//     return false;
-//   }
-// };
