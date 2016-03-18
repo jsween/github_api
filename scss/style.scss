@@ -23,6 +23,10 @@ a:hover {
   text-decoration: none;
 }
 
+hr {
+  border-top: 1px solid #aaa;
+}
+
 .icon {
   height: 16px;
   width: 16px;
@@ -50,6 +54,6 @@ a:hover {
   margin: 10px 0 0 95px ;
 }
 
-#repo_links a {
+.links {
   display: block;
 }

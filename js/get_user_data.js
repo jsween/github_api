@@ -18,7 +18,7 @@ exports.getUserData = function(apiKey, user_name){
     $('#display_location').append('<img class="icon" src="/images/location.svg" alt="icon" />' + new_user.location).append('<hr>');
     $('#display_created_at').append('<img class="icon" src="/images/time.svg" alt="icon" />' + 'Joined ' + moment(new_user.created_at).fromNow());
     $('#display_num_repos').text(new_user.public_repos).append(' repos');
-    $('#display_repo_url').append('<a href="' + new_user.repos_url + '"target="blank">View  All Repositories</a>');
+    $('#display_repo_url').append('<a href="' + new_user.repos_url + '"target="blank">View Github Profile</a>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
     return alert(user_name + ' could not be found.');
