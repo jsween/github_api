@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "github_api",
   "version": "1.0.0",
   "description": "an awesome alarm clock",
   "main": "gulpfile.js",
@@ -30,8 +30,8 @@
   "scripts": {
     "test": "mocha test"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jon Sweeney",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jos-h20/js-template.git"

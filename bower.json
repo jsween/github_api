@@ -1,8 +1,8 @@
 {
-  "name": "template",
+  "name": "github_api",
   "description": "default",
   "main": "gulpfile.js",
-  "license": "ISC",
+  "license": "MIT",
   "moduleType": [],
   "homepage": "https://github.com/jsween/github_api",
   "ignore": [
