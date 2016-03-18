@@ -1,6 +1,6 @@
 var User = require('./../js/user.js').User;
 
-exports.getRepos = function(apiKey, user_name){
+exports.getUserData = function(apiKey, user_name){
   $.get('https://api.github.com/users/' + user_name + '?access_token=' + apiKey).then(function(response){
     console.log(response);
     $('#avatar_image').empty();
@@ -10,7 +10,7 @@ exports.getRepos = function(apiKey, user_name){
     $('#display_name').text(new_user.name);
     $('#display_login').text(new_user.login).append('<hr>');
     $('#display_num_repos').text(new_user.public_repos).append(' repos');
-    $('#display_repo_url').append('<a href="' + new_user.repos_url + '">View Repositories</a>')
+    $('#display_repo_url').append('<a href="' + new_user.repos_url + '">View Repositories</a>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
     return alert(user_name + ' could not be found.');
