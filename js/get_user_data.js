@@ -4,6 +4,10 @@ exports.getUserData = function(apiKey, user_name){
   $.get('https://api.github.com/users/' + user_name + '?access_token=' + apiKey).then(function(response){
     console.log(response);
     $('#avatar_image').empty();
+    $('#display_name').empty();
+    $('#display_login').empty();
+    $('#display_num_repos').empty();
+    $('#display_repo_url').empty();
     var new_user = new User(response);
     console.log(new_user);
     $('#avatar_image').append(new_user.avatar_url).append('<hr>');

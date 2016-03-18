@@ -1,6 +1,7 @@
 exports.getRepos = function(apiKey, user_name){
   $.get('https://api.github.com/users/' + user_name + '/repos' + '?access_token=' + apiKey).then(function(response){
     console.log(response);
+    $('#repo_links').empty();
     for(var i = 0; i < response.length; ++i) {
       console.log("response's length is: " + response.length);
       $('#repo_links').append('<a href="'+ response[i].url +'">' + response[i].name + '</a>');
