@@ -1,5 +1,5 @@
 exports.User = function(user_data) {
-  this.avatar_url = '<img src ="' + user_data.avatar_url + '" alt="Avatar image for ' + this.username + '" />';
+  this.avatar_url = '<img src ="' + user_data.avatar_url + '" alt="Avatar image for ' + this.name + '" />';
   this.name = user_data.name;
   this.public_repos = user_data.public_repos;
   this.repos_url = user_data.repos_url;

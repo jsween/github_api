@@ -4,7 +4,7 @@
 3.  Get all public repos
 */
 
-var Class = require('./../js/class.js').Class;
+var User = require('./../js/user.js').User;
 var moment = require('moment');
 var apiKey = require('./../.env').apiKey;
 
