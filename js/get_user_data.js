@@ -14,7 +14,7 @@ exports.getUserData = function(apiKey, user_name){
     $('#display_name').text(new_user.name);
     $('#display_login').text(new_user.login).append('<hr>');
     $('#display_num_repos').text(new_user.public_repos).append(' repos');
-    $('#display_repo_url').append('<a href="' + new_user.repos_url + '">View  All Repositories</a>');
+    $('#display_repo_url').append('<a href="' + new_user.repos_url + '"target="blank">View  All Repositories</a>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
     return alert(user_name + ' could not be found.');
