@@ -6,6 +6,7 @@ exports.getUserData = function(apiKey, user_name){
     $('#avatar_image').empty();
     $('#display_name').empty();
     $('#display_login').empty();
+    $('#display_location').empty();
     $('#display_created_at').empty();
     $('#display_num_repos').empty();
     $('#display_repo_url').empty();
@@ -14,7 +15,8 @@ exports.getUserData = function(apiKey, user_name){
     $('#avatar_image').append(new_user.avatar_url);
     $('#display_name').text(new_user.name);
     $('#display_login').text(new_user.login).append('<hr>');
-    $('#display_created_at').text('Joined: ' + moment(new_user.created_at).fromNow()).append('<hr>');
+    $('#display_location').text(new_user.location).append('<hr>');
+    $('#display_created_at').text('Joined ' + moment(new_user.created_at).fromNow());
     $('#display_num_repos').text(new_user.public_repos).append(' repos');
     $('#display_repo_url').append('<a href="' + new_user.repos_url + '"target="blank">View  All Repositories</a>');
   }).fail(function(error){
