@@ -1,8 +1,27 @@
+* {
+  color: #555;
+}
+
 img {
   height: 200px;
   width: 200px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px #888888;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  box-shadow: none;
+  margin-right: 5px;
 }
 
 .center {
