@@ -2,7 +2,7 @@
 
 #### _A web app that allows users to search for github users through an api, 3.18.2016_
 
-### By _**Jon Sweeney **_
+### By _*Jon Sweeney*_
 
 ## Description
 
@@ -16,7 +16,8 @@ _The project was put together using npm, node.js and bower.  All dependencies ar
 ## Setup/Installation
 
 1. Open terminal.
-2. Clone
+2. Clone from [gitHub](https://github.com/jsween/github_api/).
+3. Open new folder and run the following commands below:
 
 #### System Requirements
 
