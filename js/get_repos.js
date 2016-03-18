@@ -8,6 +8,7 @@ exports.getRepos = function(apiKey, user_name){
     console.log(new_user);
     $('#avatar_image').append(new_user.avatar_url);
     $('#display_name').text(new_user.name);
+    $('#display_login').text(new_user.login);
   }).fail(function(error){
     console.log(error.responseJSON.message);
     return alert(user_name + ' could not be found.');
