@@ -10,11 +10,11 @@ exports.getUserData = function(apiKey, user_name){
     $('#display_repo_url').empty();
     var new_user = new User(response);
     console.log(new_user);
-    $('#avatar_image').append(new_user.avatar_url).append('<hr>');
+    $('#avatar_image').append(new_user.avatar_url);
     $('#display_name').text(new_user.name);
     $('#display_login').text(new_user.login).append('<hr>');
     $('#display_num_repos').text(new_user.public_repos).append(' repos');
-    $('#display_repo_url').append('<a href="' + new_user.repos_url + '">View Repositories</a>');
+    $('#display_repo_url').append('<a href="' + new_user.repos_url + '">View  All Repositories</a>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
     return alert(user_name + ' could not be found.');
