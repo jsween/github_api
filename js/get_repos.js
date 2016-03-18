@@ -6,7 +6,7 @@ exports.getRepos = function(apiKey, user_name){
     $('#avatar_image').empty();
     var new_user = new User(response);
     console.log(new_user);
-    $('#avatar_image').append(new_user.avatar_url);
+    $('#avatar_image').append(new_user.avatar_url).append('<hr>');
     $('#display_name').text(new_user.name);
     $('#display_login').text(new_user.login);
   }).fail(function(error){
