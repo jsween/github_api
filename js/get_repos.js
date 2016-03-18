@@ -5,7 +5,7 @@ exports.getRepos = function(apiKey, user_name){
     $('#repo_links').append('<h4>First 30 Repositories</h4>')
     for(var i = 0; i < response.length; ++i) {
       console.log("response's length is: " + response.length);
-      $('#repo_links').append('<a href="'+ response[i].url +'">' + response[i].name + '</a>');
+      $('#repo_links').append('<a href="'+ response[i].html_url +'">' + response[i].name + '</a>');
     }
   }).fail(function(error){
     console.log(error.responseJSON.message);
