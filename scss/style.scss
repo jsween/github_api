@@ -1,5 +1,10 @@
 * {
   color: #555;
+  font-family: 'Vollkorn', serif;
+}
+
+body {
+  background-color: #eee;
 }
 
 img {
@@ -32,11 +37,12 @@ a:hover {
 .jumbotron {
   background-color: #3D82AB;
   color: #EE5921;
-  text-shadow: 2px 2px #111;
+  text-shadow: 3px 3px #444;
   border-bottom: 10px solid #484848;
 }
 
 .jumbotron h1 {
+  font-weight: bold;
   font-size: 5.2em;
 }
 
