@@ -9,11 +9,13 @@ var apiKey = require('./../.env').apiKey;
 var getRepos = require('./../js/get_repos.js').getRepos;
 
 $(function(){
-  var user_name = 'jsween'; //move into submit
   $('form#search-user').submit(function(event) {
     event.preventDefault();
 
+    var user_name = $('#user_name').val(); //move into submit
 
+    var data = getRepos(apiKey, user_name);
+    var new_user = new User(data);
+    console.log('The new user object is: ' + new_user);
   }); //end of submit form
-  getRepos(apiKey, user_name);
 }); //end of when ready
