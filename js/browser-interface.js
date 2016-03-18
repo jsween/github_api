@@ -8,4 +8,5 @@ var moment = require('moment');
 var apiKey = require('./../.env').apiKey;
 var getRepos = require('./../js/get_repos.js').getRepos;
 
-getRepos(apiKey);
+var user_name = 'jsween';
+getRepos(apiKey, user_name);
