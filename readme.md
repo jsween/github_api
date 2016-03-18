@@ -36,7 +36,12 @@ _The project was put together using npm, node.js and bower.  All dependencies ar
 
 ## Known Bugs
 
-_This application does not have any known bugs at this time._
+_Displays the string null._
+
+### To Do List ###
+
+1. Write function to check if null.
+2. Add weather api.
 
 ## Support and contact details
 
