@@ -3,7 +3,7 @@ exports.getRepos = function(apiKey, user_name){
     console.log(response);
     for(var i = 0; i < response.length; ++i) {
       console.log("response's length is: " + response.length);
-      $('#repo_links').append('<a href="#">' + response[i].name + '</a>');
+      $('#repo_links').append('<a href="'+ response[i].url +'">' + response[i].name + '</a>');
     }
   }).fail(function(error){
     console.log(error.responseJSON.message);
