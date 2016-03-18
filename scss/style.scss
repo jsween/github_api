@@ -2,10 +2,22 @@ img {
   height: 200px;
   width: 200px;
   border-radius: 20px;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .center {
   text-align: center;
+}
+
+.jumbotron {
+  background-color: #3D82AB;
+  color: #EE5921;
+  text-shadow: 2px 2px #111;
+  border-bottom: 10px solid #484848;
+}
+
+.jumbotron h1 {
+  font-size: 5.2em;
 }
 
 #submit_user_name {
