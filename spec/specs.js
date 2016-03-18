@@ -23,9 +23,9 @@ describe("Class", function() {
     expect(testUser.public_repos).to.equal(15);
   });
   it("will return the repos_url property", function() {
-    var user_data = {avatar_url: "avatar.com", name: "user_name", public_repos: 15, repos_url: "repos.com"};
+    var user_data = {avatar_url: "avatar.com", name: "user_name", public_repos: 15, html_url: "repos.com"};
     var testUser = new User(user_data);
-    expect(testUser.repos_url).to.equal("repos.com");
+    expect(testUser.repos_url).to.equal("repos.com?tab=repositories");
   });
   // it("will return the current property", function() {
   //   var currentProperty = "12:00";
